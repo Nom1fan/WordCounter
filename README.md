@@ -17,6 +17,10 @@ Running
 3. View word histogram.
 
 
+Troubleshooting
+---------------
+View `app.log` created next to the executable.
+
 Contact
 -------
 
