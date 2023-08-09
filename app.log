@@ -1,0 +1,41 @@
+2023-08-07 10:25:19.656 INFO  [AWT-EventQueue-0] org.example.ui.WordCountLogic - Processing file: /Users/morm/Downloads/English Mor Resume.pdf
+2023-08-07 10:26:11.563 INFO  [AWT-EventQueue-0] org.example.ui.WordCountLogic - Processing file: /Users/morm/Desktop/Screenshot 2023-07-26 at 14.34.07.png
+2023-08-07 10:26:11.574 ERROR [AWT-EventQueue-0] org.example.ui.WordCountLogic - Failed to process file: /Users/morm/Desktop/Screenshot 2023-07-26 at 14.34.07.png
+java.nio.charset.MalformedInputException: Input length = 1
+	at java.base/java.lang.String.throwMalformed(String.java:1238)
+	at java.base/java.lang.String.decodeUTF8_UTF16(String.java:1189)
+	at java.base/java.lang.String.newStringUTF8NoRepl(String.java:726)
+	at java.base/java.lang.String.newStringNoRepl1(String.java:754)
+	at java.base/java.lang.String.newStringNoRepl(String.java:736)
+	at java.base/java.lang.System$2.newStringNoRepl(System.java:2390)
+	at java.base/java.nio.file.Files.readString(Files.java:3369)
+	at java.base/java.nio.file.Files.readString(Files.java:3325)
+	at org.example.file.TxtFile.getText(TxtFile.java:17)
+	at org.example.ui.WordCountLogic.onFileSelected(WordCountLogic.java:24)
+	at org.example.ui.FileChooser.lambda$new$0(FileChooser.java:34)
+	at java.desktop/java.awt.Button.processActionEvent(Button.java:419)
+	at java.desktop/java.awt.Button.processEvent(Button.java:387)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5001)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4833)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:722)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:716)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:746)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:744)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:743)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2023-08-07 10:27:31.415 INFO  [AWT-EventQueue-0] org.example.ui.WordCountLogic - Processing file: /Users/morm/Desktop/Screenshot 2023-07-26 at 14.34.07.png
+2023-08-07 10:36:51.461 ERROR [AWT-EventQueue-0] org.example.ui.FileChooser - Failed to find file. Either dir or filename were null
+2023-08-07 10:40:52.717 INFO  [AWT-EventQueue-0] org.example.ui.WordCountLogic - Processing file: /Users/morm/Downloads/זימון ממרכז רפואי תל-אביב ע_ש סוראסקי.PDF
+2023-08-07 10:40:52.726 ERROR [AWT-EventQueue-0] org.example.ui.WordCountLogic - File is not of a textual format:/Users/morm/Downloads/זימון ממרכז רפואי תל-אביב ע_ש סוראסקי.PDF
+2023-08-07 10:41:51.318 INFO  [AWT-EventQueue-0] org.example.ui.WordCountLogic - Processing file: /Users/morm/Downloads/זימון ממרכז רפואי תל-אביב ע_ש סוראסקי.PDF
