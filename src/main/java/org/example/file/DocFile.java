@@ -1,13 +1,10 @@
 package org.example.file;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.apache.poi.extractor.ExtractorFactory;
 import org.apache.poi.extractor.POITextExtractor;
-import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
+
+import java.io.File;
+import java.io.IOException;
 
 public class DocFile implements TextFile {
 
@@ -19,7 +16,8 @@ public class DocFile implements TextFile {
     @Override
     public String getText() throws IOException {
         File file = new File(filePath);
-        POITextExtractor extractor = ExtractorFactory.createExtractor(file);
-        return extractor.getText();
+        try (POITextExtractor extractor = ExtractorFactory.createExtractor(file)) {
+            return extractor.getText();
+        }
     }
 }
